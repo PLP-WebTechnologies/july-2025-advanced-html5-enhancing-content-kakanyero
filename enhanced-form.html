@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Paradise - Tourism Portal</title>
+</head>
+<body>
+    <header>
+        <h1>Explore Paradise</h1>
+        <p>Your gateway to unforgettable travel experiences</p>
+        <nav>
+            <ul>
+                <li><a href="#destinations">Top Destinations</a></li>
+                <li><a href="#packages">Travel Packages</a></li>
+                <li><a href="#testimonials">Traveler Stories</a></li>
+                <li><a href="#contact">Plan Your Trip</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="destinations">
+            <h2>Top Travel Destinations</h2>
+            
+            <article>
+                <h3>Most Popular Countries to Visit</h3>
+                <ol>
+                    <li>Italy - Land of history and cuisine</li>
+                    <li>Japan - Blend of tradition and modernity</li>
+                    <li>New Zealand - Adventure paradise</li>
+                    <li>Canada - Natural wonders</li>
+                    <li>Greece - Island beauty</li>
+                </ol>
+            </article>
+            
+            <article>
+                <h3>Must-See Attractions</h3>
+                <ul>
+                    <li>Eiffel Tower, France</li>
+                    <li>Great Wall of China</li>
+                    <li>Machu Picchu, Peru</li>
+                    <li>Grand Canyon, USA</li>
+                    <li>Great Barrier Reef, Australia</li>
+                </ul>
+            </article>
+            
+            <article>
+                <h3>Travel Seasons Guide</h3>
+                <dl>
+                    <dt>Peak Season</dt>
+                    <dd>June-August: Best weather but crowded and expensive</dd>
+                    
+                    <dt>Shoulder Season</dt>
+                    <dd>April-May & September-October: Good weather with fewer crowds</dd>
+                    
+                    <dt>Off Season</dt>
+                    <dd>November-March: Lowest prices but some attractions may be closed</dd>
+                </dl>
+            </article>
+        </section>
+
+        <section id="packages">
+            <h2>Travel Packages Comparison</h2>
+            <table>
+                <caption>Our Best Selling Packages</caption>
+                <thead>
+                    <tr>
+                        <th>Package</th>
+                        <th>Duration</th>
+                        <th>Price (USD)</th>
+                        <th>Inclusions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>European Highlights</td>
+                        <td>10 days</td>
+                        <td>$2,499</td>
+                        <td>5 countries, hotels, breakfast, tours</td>
+                    </tr>
+                    <tr>
+                        <td>Asian Adventure</td>
+                        <td>14 days</td>
+                        <td>$3,199</td>
+                        <td>Flights, 4-star hotels, all meals</td>
+                    </tr>
+                    <tr>
+                        <td>Caribbean Cruise</td>
+                        <td>7 days</td>
+                        <td>$1,899</td>
+                        <td>Cruise cabin, all meals, island tours</td>
+                    </tr>
+                    <tr>
+                        <td>Safari Experience</td>
+                        <td>12 days</td>
+                        <td>$4,500</td>
+                        <td>Lodges, game drives, expert guide</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="4">Prices are per person based on double occupancy. Seasonal discounts may apply.</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <section id="testimonials">
+            <h2>Traveler Experiences</h2>
+            
+            <article>
+                <h3>Beautiful Bali</h3>
+                <figure>
+                    <img src="https://example.com/bali.jpg" alt="Bali beach with palm trees" width="600">
+                    <figcaption>Sunset at Seminyak Beach, Bali</figcaption>
+                </figure>
+                <audio controls>
+                    <source src="bali-review.mp3" type="audio/mpeg">
+                    Your browser does not support audio element.
+                </audio>
+                <p><em>"The cultural tours and beaches were incredible!" - Sarah M.</em></p>
+            </article>
+            
+            <article>
+                <h3>Amazing Alps</h3>
+                <video width="600" controls poster="alps-poster.jpg">
+                    <source src="alps-tour.mp4" type="video/mp4">
+                    Your browser does not support video tag.
+                </video>
+                <p><em>"Best skiing experience of my life. The tour guides were fantastic." - James T.</em></p>
+            </article>
+        </section>
+
+        <section id="contact">
+            <h2>Plan Your Dream Vacation</h2>
+            <form id="travel-form" novalidate>
+                <fieldset>
+                    <legend>Personal Information</legend>
+                    
+                    <label for="name">Full Name*</label>
+                    <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name" autocomplete="name">
+                    
+                    <label for="email">Email*</label>
+                    <input type="email" id="email" name="email" required placeholder="your@email.com" autocomplete="email">
+                    
+                    <label for="phone">Phone Number*</label>
+                    <input type="tel" id="phone" name="phone" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-7890" autocomplete="tel">
+                    <small>Format: 123-456-7890</small>
+                    
+                    <label for="travelers">Number of Travelers*</label>
+                    <input type="number" id="travelers" name="travelers" required min="1" max="20" value="2">
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Trip Preferences</legend>
+                    
+                    <label for="destination">Destination Interest*</label>
+                    <select id="destination" name="destination" required>
+                        <option value="">-- Select Preferred Destination --</option>
+                        <option value="europe">Europe</option>
+                        <option value="asia">Asia</option>
+                        <option value="americas">Americas</option>
+                        <option value="africa">Africa</option>
+                        <option value="oceania">Oceania</option>
+                    </select>
+                    
+                    <label for="trip-date">Preferred Travel Date*</label>
+                    <input type="date" id="trip-date" name="trip-date" required min="2023-11-01">
+                    
+                    <label>Trip Type*</label>
+                    <div>
+                        <label><input type="radio" name="trip-type" value="family" required> Family</label>
+                        <label><input type="radio" name="trip-type" value="couple"> Couple</label>
+                        <label><input type="radio" name="trip-type" value="solo"> Solo</label>
+                        <label><input type="radio" name="trip-type" value="friends"> Friends</label>
+                    </div>
+                    
+                    <label>Interests (select all that apply)</label>
+                    <div>
+                        <label><input type="checkbox" name="interests" value="beach"> Beach</label>
+                        <label><input type="checkbox" name="interests" value="culture"> Culture</label>
+                        <label><input type="checkbox" name="interests" value="adventure"> Adventure</label>
+                        <label><input type="checkbox" name="interests" value="food"> Food</label>
+                        <label><input type="checkbox" name="interests" value="shopping"> Shopping</label>
+                    </div>
+                    
+                    <label for="budget">Budget Range (per person)</label>
+                    <input type="range" id="budget" name="budget" min="500" max="10000" step="500" value="2500">
+                    <output for="budget" id="budget-value">$2,500</output>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Additional Information</legend>
+                    
+                    <label for="comments">Special Requests</label>
+                    <textarea id="comments" name="comments" rows="4" placeholder="Dietary restrictions, accessibility needs, etc."></textarea>
+                    
+                    <label for="newsletter">Sign up for travel deals newsletter</label>
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    
+                    <label for="terms">I agree to the terms and conditions*</label>
+                    <input type="checkbox" id="terms" name="terms" required>
+                </fieldset>
+                
+                <div>
+                    <button type="submit">Submit Inquiry</button>
+                    <button type="reset">Clear Form</button>
+                </div>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Explore Paradise Tourism. All rights reserved.</p>
+        <address>
+            Contact us at: <a href="mailto:info@exploreparadise.com">info@exploreparadise.com</a>
+        </address>
+    </footer>
+</body>
+</html>
